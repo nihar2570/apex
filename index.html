@@ -52,8 +52,8 @@
         text-shadow: 0rem 0rem 0.15em #f2f2f2;
       }
       .navbar-brand {
-        font-size: 3rem;
-        text-shadow: 0 0 0.15rem #f2f2f2;
+        font-size: 2.5rem;
+        text-shadow: 0 0 0.2rem #f2f2f2;
       }
       .navbar {
         background-color: transparent !important;
@@ -61,12 +61,12 @@
       /* only for mobile */
       @media all and (max-width: 699px) and (min-width: 300px) {
         .typewriter {
-          padding: 20% 0% 0% 10%;
+          padding: 20% 0% 0% 5%;
           text-align: left;
-          font-size: 3em;
+          font-size: 2em;
           font-weight: 400;
           color: yellow;
-          text-shadow: 0 0 0.1rem #222222, 0 0 0.4rem #ffff33;
+          text-shadow: 0rem 0rem 0.15em #f2f2f2;
         }
         .d2 {
           font-family: "Dancing Script", cursive;
@@ -84,10 +84,15 @@
   <body>
     <div class="bg-image">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary dancing1 align-items-center text-center animate__animated animate__fadeInDown">
+      <nav
+        class="navbar navbar-expand-lg dancing1 align-items-center text-center animate__animated animate__fadeInDown" data-bs-theme="dark"
+      >
         <div class="container">
           <!-- apex brandname -->
-          <span class="navbar-brand text-white animate__animated animate__pulse animate__delay-4s animate__repeat-1">Apex Ecosystems</span>
+          <span
+            class="navbar-brand text-white animate__animated animate__tada animate__delay-4s"
+            >Apex Ecosystems</span
+          >
           <!-- mobile toggle button -->
           <button
             class="navbar-toggler"
@@ -101,12 +106,16 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav d2 ms-auto ">
+            <ul class="navbar-nav d2 ms-auto">
               <li class="nav-item px-5">
-                <a class="nav-link text-white" href="./data/LakeView.pdf">Lake View</a>
+                <a class="nav-link text-white" href="./data/LakeView.pdf"
+                  >Lake View</a
+                >
               </li>
               <li class="nav-item px-5">
-                <a class="nav-link text-white" href="./data/SouthAvenue.pdf">South Avenue</a>
+                <a class="nav-link text-white" href="./data/SouthAvenue.pdf"
+                  >South Avenue</a
+                >
               </li>
               <li class="nav-item px-5">
                 <a class="nav-link text-white" href="#">About</a>
@@ -118,9 +127,17 @@
       <!-- floating caption -->
       <div class="typewriter">
         <p class="animate__animated animate__fadeInTopLeft">Maximum</p>
-        <p class="animate__animated animate__fadeInLeft animate__delay-1s">Comfort,</p>
-        <p class="animate__animated animate__fadeInLeft animate__delay-2s">Minimal</p>
-        <p class="animate__animated animate__fadeInBottomLeft animate__delay-3s">Footprint.</p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-1s">
+          Comfort,
+        </p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-2s">
+          Minimal
+        </p>
+        <p
+          class="animate__animated animate__fadeInBottomLeft animate__delay-3s"
+        >
+          Footprint.
+        </p>
       </div>
     </div>
     <script
