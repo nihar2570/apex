@@ -22,37 +22,49 @@
       }
       .bg-image {
         background-image: url("./data/m2.jpeg");
-        height: 100%;
-        filter: blur();
+        min-height: 100%;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
       }
       .dancing1 {
         font-family: "Dancing Script", cursive;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        color: #ffffff;
+        font-size: 2.5em;
+        color: white;
         text-shadow: 0 0 0.75rem #e6e6e6;
-        text-decoration: none;
-      }
-      a:link {
-        text-decoration: none;
-      }
-      a:visited {
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: none;
-      }
-      a:active {
         text-decoration: none;
       }
       .typewriter {
         height: 80%;
-        padding: 7% 0% 0% 18%;
-        text-shadow: 0.125rem 0.125rem 0.5rem #e6e6e6;
+        padding: 8% 0% 0% 20%;
+        font-size: 3.5em;
+        font-weight: 400;
+        color: yellow;
+        text-shadow: 0rem 0rem 0.2em #e6e6e6;
+        }
+      /* only for mobile */
+      @media all and (max-width: 699px) and (min-width: 300px) {
+        .typewriter {
+          padding: 20% 0% 0% 10%;
+          text-align: left;
+          font-size: 3em;
+          font-weight: 400;
+          color: yellow;
+          text-shadow: 0rem 0rem 0.1em #aaaaaa, 0rem 0rem 0.2em #ffff33, 0rem 0rem 0.4em #ff66ff, 0rem 0rem 0.6em #ffff33;
+        }
+        .dancing1 {
+          font-family: "Dancing Script", cursive;
+          font-optical-sizing: auto;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 2em;
+          color: #ffffff;
+          text-shadow: 0 0 0.75rem #e6e6e6;
+          text-decoration: none;
+        }
       }
     </style>
     <link
@@ -66,37 +78,53 @@
     <div class="bg-image">
       <!-- navbar -->
       <div class="container">
-        <div class="row dancing1 align-items-center text-center animate__animated animate__fadeInDown">
-          <div class="col">
-            <div class="display-5 text-white animate__animated animate__pulse animate__delay-4s animate__repeat-3">Apex Ecosystems</div>
-          </div>
-          <div class="col">
-            <a
-              class="display-6 text-white"
-              href="./data/LakeView.pdf"
-              target="_blank"
-              >Lake View</a
+        <div
+          class="row dancing1 align-items-center text-center animate__animated animate__fadeInDown"
+        >
+          <div class="col-xs-12 col-sm-12 col-md-4">
+            <p
+              class="animate__animated animate__pulse animate__delay-4s animate__repeat-3"
             >
+              Apex Ecosystems
+            </p>
           </div>
           <div class="col">
-            <a
-              class="display-6 text-white"
-              href="./data/SouthAvenue.pdf"
-              target="_blank"
-              >South Avenue</a
-            >
+            <p>
+              <a
+                href="./data/LakeView.pdf"
+                class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-50-hover"
+                >Lake View</a
+              >
+            </p>
           </div>
           <div class="col">
-            <div class="display-6 text-white">About</div>
+            <p>
+              <a
+                href="./data/SouthAvenue.pdf"
+                class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-50-hover"
+                >South Avenue</a
+              >
+            </p>
+          </div>
+          <div class="col">
+            <p>About</p>
           </div>
         </div>
       </div>
       <!-- caption -->
-      <div class="typewriter text-white display-5">
+      <div class="typewriter">
         <p class="animate__animated animate__fadeInTopLeft">Maximum</p>
-        <p class="animate__animated animate__fadeInLeft animate__delay-1s">Comfort,</p>
-        <p class="animate__animated animate__fadeInLeft animate__delay-2s">Minimal</p>
-        <p class="animate__animated animate__fadeInBottomLeft animate__delay-3s">Footprint.</p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-1s">
+          Comfort,
+        </p>
+        <p class="animate__animated animate__fadeInLeft animate__delay-2s">
+          Minimal
+        </p>
+        <p
+          class="animate__animated animate__fadeInBottomLeft animate__delay-3s"
+        >
+          Footprint.
+        </p>
       </div>
     </div>
     <script
