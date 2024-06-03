@@ -30,13 +30,27 @@
       }
       .navbar {
         background-color: transparent !important;
-        backdrop-filter: blur(.4rem);
-        text-shadow: 0.2rem 0.2rem 0.2rem #b3b3b3;
+        backdrop-filter: blur(0.4rem);
       }
-      .captions{
-        height: 100vh;
+      .captions {
+        height: 90vh;
         color: yellow;
-        text-shadow: .2rem .2rem .1rem red,0 0 .4rem #666666;
+        text-shadow: 0.2rem 0.2rem 0.1rem red, 0 0 0.4rem #666666;
+      }
+      .navbar-brand{
+        color: yellow;
+        text-shadow: 0rem 0rem 1rem white, 0 0 0.4rem #666666;
+      }
+      .navbar-brand:hover{
+        color: #ff66cc;
+      }
+      .navbar-nav .nav-item .nav-link {
+        color: yellow;
+        text-shadow: 0rem 0rem .6rem white, 0 0 0.4rem #666666;
+      }
+      .navbar-nav .nav-item.active .nav-link,
+      .navbar-nav .nav-item:hover .nav-link {
+        color: #ff66cc;
       }
     </style>
   </head>
@@ -49,7 +63,7 @@
       >
         <div class="container">
           <!-- apex brandname -->
-          <span class="navbar-brand fs-1">Apex Ecosystems</span>
+          <span class="navbar-brand fs-1 ">Apex Ecosystems</span>
           <!-- mobile toggle button -->
           <button
             class="navbar-toggler"
@@ -65,17 +79,17 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav fs-3 ms-auto">
               <li class="nav-item px-2">
-                <a class="nav-link text-white" href="./data/LakeView.pdf"
+                <a class="nav-link " href="./data/LakeView.pdf"
                   >Lake View</a
                 >
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link text-white" href="./data/SouthAvenue.pdf"
+                <a class="nav-link " href="./data/SouthAvenue.pdf"
                   >South Avenue</a
                 >
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link text-white" href="#">About</a>
+                <a class="nav-link " href="#">About</a>
               </li>
             </ul>
           </div>
@@ -84,7 +98,9 @@
       <!-- floating caption -->
       <div class="container captions">
         <div class="row h-75 align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12 text-center display-1 fw-semibold">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 text-center display-1 fw-semibold"
+          >
             <p class="animate__animated animate__fadeInTopLeft">Maximum</p>
             <p class="animate__animated animate__fadeInLeft">Comfort,</p>
             <p class="animate__animated animate__fadeInLeft animate__delay-1s">
